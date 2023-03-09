@@ -1,10 +1,10 @@
-import Header from "./components/Header/Header";
+import Layout from "./components/Layout/Layout";
 import LoginForm from "./components/LoginForm/LoginForm";
 
 function App() {
   return (
     <>
-      <Header />
+      <Layout />
       <LoginForm />
     </>
   );
