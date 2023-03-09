@@ -14,13 +14,13 @@ describe("Given a usersReducer", () => {
       const user: User = {
         email: "jhonny@jhon.com",
         token: "cacahuet82e92",
-        id: "",
+        id: "1",
       };
 
       const expectedUserState: UserState = {
         email: "jhonny@jhon.com",
         token: "cacahuet82e92",
-        id: "",
+        id: "1",
         isLogged: true,
       };
 
