@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useUser from "../../hooks/useUser/useUser";
+import Button from "../Button/Button";
 import LoginFormStyled from "./LoginFormStyled";
 
 const LoginForm = (): JSX.Element => {
@@ -59,6 +60,7 @@ const LoginForm = (): JSX.Element => {
           onChange={handlePassword}
         />
       </div>
+      <Button text={"Log in"} />
       <div className="link">
         Not a member? <a href="sign up">Sign up</a>
       </div>
