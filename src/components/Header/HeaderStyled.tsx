@@ -5,7 +5,7 @@ const HeaderStyled = styled.header`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 100vh;
+  width: 100%;
 `;
 
 export default HeaderStyled;
