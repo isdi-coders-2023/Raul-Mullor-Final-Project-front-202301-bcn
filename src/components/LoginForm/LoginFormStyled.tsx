@@ -3,7 +3,7 @@ import styled from "styled-components";
 const LoginFormStyled = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 44px;
+  gap: 40px;
   align-items: center;
   .login-form {
     &__section {

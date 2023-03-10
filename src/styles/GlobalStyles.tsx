@@ -1,15 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-:root {
-  --main-color-button: #590004;
-  --main-color-text: #fff;
-  --secondary-color-button: #1C2938
-  --secondary-color-text: #000;
-  --third-color-text: #0D23AF;
-  --main-font: "Spectral SC";
-  --secondary-font: "Spectral";
-}
 
 *, ::after, ::before {
   box-sizing: border-box;
@@ -18,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 body {
   padding: 20px;
   background-color: #fff;
-  font-family: var(--main-font);
+  font-family: ${(props) => props.theme.fonts.primary};
   min-height: 100vh;
   
 }

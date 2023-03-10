@@ -17,12 +17,12 @@ beforeAll(() => {
 
 const userCredentials: UserCredentials = {
   email: "jhonny@jhon.com",
-  password: "dkldjdklsdj",
+  password: "12345678",
 };
 
 const mockTokenPayload: CustomTokenPayload = {
   email: "jhonny@jhon.com",
-  id: "12345678",
+  id: "1",
 };
 
 const mockToken = "vik27634fvj";
