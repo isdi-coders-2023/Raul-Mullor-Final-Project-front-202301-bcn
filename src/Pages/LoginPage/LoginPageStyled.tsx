@@ -12,5 +12,5 @@ const LoginPageStyled = styled.div`
     color: #5f7cd5;
   }
 `;
-
+<div className=""></div>;
 export default LoginPageStyled;
