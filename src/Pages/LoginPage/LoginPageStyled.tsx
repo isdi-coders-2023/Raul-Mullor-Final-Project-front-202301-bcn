@@ -6,9 +6,10 @@ const LoginPageStyled = styled.div`
   gap: 40px;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 
   a {
-    color: ${(props) => props.theme.colors.secondaryColorText};
+    color: #5f7cd5;
   }
 `;
 
