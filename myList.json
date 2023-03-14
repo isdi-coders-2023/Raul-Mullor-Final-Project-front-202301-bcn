@@ -1,0 +1,101 @@
+[
+  {
+    "age": 19,
+    "alignment": "Neutral",
+    "gender": "female",
+    "height": "1.80",
+    "name": "Ramón",
+    "pathfinderclass": "paladin",
+    "image": "",
+    "race": "human",
+    "weight": "80kg"
+  },
+  {
+    "age": 24,
+    "alignment": "NeutralGood",
+    "gender": "male",
+    "height": "1.90",
+    "name": "Aurora",
+    "pathfinderclass": "sorcerer",
+    "image": "",
+    "race": "elf",
+    "weight": "70kg"
+  },
+  {
+    "age": 30,
+    "alignment": "LawfulNeutral",
+    "gender": "female",
+    "height": "1.50",
+    "name": "Branca",
+    "pathfinderclass": "monk",
+    "image": "",
+    "race": "halfling",
+    "weight": "45kg"
+  },
+  {
+    "age": 48,
+    "alignment": "ChaoticNeutral",
+    "gender": "male",
+    "height": "1.70",
+    "name": "Cadeyrn",
+    "pathfinderclass": "druid",
+    "image": "",
+    "race": "halfElf",
+    "weight": "65kg"
+  },
+  {
+    "age": 26,
+    "alignment": "LawfulGood",
+    "gender": "male",
+    "height": "1.80",
+    "name": "Drogathar",
+    "pathfinderclass": "fighter",
+    "image": "",
+    "race": "dwarf",
+    "weight": "90kg"
+  },
+  {
+    "age": 22,
+    "alignment": "ChaoticEvil",
+    "gender": "female",
+    "height": "1.65",
+    "name": "Eliara",
+    "pathfinderclass": "barbarian",
+    "image": "",
+    "race": "halfOrc",
+    "weight": "75kg"
+  },
+  {
+    "age": 27,
+    "alignment": "LawfulEvil",
+    "gender": "male",
+    "height": "1.85",
+    "name": "Fenris",
+    "pathfinderclass": "ranger",
+    "image": "",
+    "race": "gnome",
+    "weight": "60kg"
+  },
+  {
+    "age": 25,
+    "alignment": "Neutral",
+    "gender": "female",
+    "height": "1.70",
+    "name": "Gytha",
+    "pathfinderclass": "bard",
+    "image": "",
+    "race": "human",
+    "weight": "65kg"
+  },
+  {
+    "age": 29,
+    "alignment": "NeutralEvil",
+    "gender": "male",
+    "height": "1.95",
+    "name": "Haldor",
+    "pathfinderclass": "rogue",
+    "image": "",
+    "race": "elf",
+    "weight": "80kg"
+  }
+]
