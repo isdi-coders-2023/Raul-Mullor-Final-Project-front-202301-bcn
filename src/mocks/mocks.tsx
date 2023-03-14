@@ -1,4 +1,5 @@
 import {
+  CharactersData,
   Alignment,
   CharacterDataStructure,
   Classes,
@@ -16,4 +17,8 @@ export const mockCharacter: CharacterDataStructure = {
   pathfinderclass: Classes.monk,
   image: "https://avatars.githubusercontent.com/u/109736378?v=4",
   id: "s4l4m1v3g4n0",
+};
+
+export const mockCharacters: CharactersData = {
+  character: [mockCharacter],
 };

@@ -1,5 +1,5 @@
 import { screen } from "@testing-library/react";
-import { mockCharacter } from "../../mocks/Card";
+import { mockCharacter } from "../../mocks/mocks";
 import { renderWithProviders } from "../../testUtils";
 import Card from "./Card";
 
