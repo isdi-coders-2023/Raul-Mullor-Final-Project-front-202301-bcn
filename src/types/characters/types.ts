@@ -1,52 +1,53 @@
 export interface CharacterDataStructure {
   name: string;
   age: number;
-  gender: string;
+  gender: "female" | "male";
   height: string;
   weight: string;
   alignment: Alignment;
   race: Races;
   pathfinderclass: Classes;
   image: string;
+  id: string;
 }
 
 export interface CharactersData {
-  Character: CharactersDataStructure;
+  character: CharactersDataStructure;
 }
 
-enum Races {
-  human,
-  elf,
-  dwarf,
-  gnome,
-  halfElf,
-  halfOrc,
-  halfling,
+export enum Races {
+  human = "human",
+  elf = "elf",
+  dwarf = "dwarf",
+  gnome = "gnome",
+  halfElf = "halfElf",
+  halfOrc = "halfOrc",
+  halfling = "halfling",
 }
 
-enum Classes {
-  barbarian,
-  bard,
-  druid,
-  fighter,
-  monk,
-  paladin,
-  ranger,
-  rogue,
-  sorcerer,
-  wizard,
+export enum Classes {
+  barbarian = "barbarian",
+  bard = "bard",
+  druid = "druid",
+  fighter = "fighter",
+  monk = "monk",
+  paladin = "paladin",
+  ranger = "ranger",
+  rogue = "rogue",
+  sorcerer = "sorcerer",
+  wizard = "wizard",
 }
 
-enum Alignment {
-  LawfulGood,
-  NeutralGood,
-  ChaoticGood,
-  LawfulNeutral,
-  Neutral,
-  ChaoticNeutral,
-  LawfulEvil,
-  NeutralEvil,
-  ChaoticEvil,
+export enum Alignment {
+  LawfulGood = "LawfulGood",
+  NeutralGood = "NeutralGood",
+  ChaoticGood = "ChaoticGood",
+  LawfulNeutral = "LawfulNeutral",
+  Neutral = "Neutral",
+  ChaoticNeutral = "ChaoticNeutral",
+  LawfulEvil = "LawfulEvil",
+  NeutralEvil = "NeutralEvil",
+  ChaoticEvil = "ChaoticEvil",
 }
 
 export type CharactersDataStructure = CharacterDataStructure[];
