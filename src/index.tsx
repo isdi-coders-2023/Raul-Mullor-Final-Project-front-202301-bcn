@@ -2,7 +2,6 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
-import reportWebVitals from "./reportWebVitals";
 import GlobalStyles from "./styles/GlobalStyles";
 import "@fontsource/spectral";
 import "@fontsource/spectral-sc";
@@ -24,5 +23,3 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
-
-reportWebVitals();
