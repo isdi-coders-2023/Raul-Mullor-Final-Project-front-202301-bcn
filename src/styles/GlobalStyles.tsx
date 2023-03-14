@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 body {
   padding: 20px;
   background-color: #fff;
-  font-family: ${(props) => props.theme.fonts.primary};
+  font-family: "Spectral SC";
   min-height: 100vh;
   
 }
@@ -35,7 +35,6 @@ button{
 
 a, :visited, :active{
 text-decoration: none;
-color: var(--third-color-text)
 }
 
 `;

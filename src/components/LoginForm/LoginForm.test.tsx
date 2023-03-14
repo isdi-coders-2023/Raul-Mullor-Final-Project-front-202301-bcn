@@ -2,6 +2,7 @@ import { act, screen } from "@testing-library/react";
 import { renderRouterWithProviders } from "../../testUtils";
 import LoginForm from "./LoginForm";
 import userEvent from "@testing-library/user-event";
+import GlobalStyles from "../../styles/GlobalStyles";
 
 const mockLoginUser = jest.fn();
 
