@@ -5,9 +5,13 @@ import {
   PreloadedState,
   combineReducers,
 } from "@reduxjs/toolkit";
+import { charactersReducer } from "./feature/charactersSlice/charactersSlice";
 import { userReducer } from "./feature/users/usersSlice/usersSlice";
 
-const rootReducer = combineReducers({ user: userReducer });
+const rootReducer = combineReducers({
+  user: userReducer,
+  character: charactersReducer,
+});
 
 export const setupStore = (preloadedState?: PreloadedState<RootState>) => {
   return configureStore({
