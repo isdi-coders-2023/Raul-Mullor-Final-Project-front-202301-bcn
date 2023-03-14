@@ -25,10 +25,12 @@ const Card = ({
         alt={name}
         width={95}
         height={168}
-        className="card_image"
+        className="card__image"
       />
       <ul>
-        <li>{name}</li>
+        <li>
+          <h2 className="card__tittle">{name}</h2>
+        </li>
         <li>{race}</li>
         <li>{pathfinderclass}</li>
       </ul>
