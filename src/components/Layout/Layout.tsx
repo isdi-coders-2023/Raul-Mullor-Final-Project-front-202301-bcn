@@ -1,3 +1,4 @@
+import HomePage from "../../Pages/HomePage/HomePage";
 import LoginPage from "../../Pages/LoginPage/LoginPage";
 import Header from "../Header/Header";
 
@@ -6,6 +7,7 @@ const Layout = (): JSX.Element => {
     <>
       <Header />
       <LoginPage />
+      <HomePage />
     </>
   );
 };
