@@ -1,4 +1,4 @@
-import { renderHook } from "@testing-library/react";
+import { act, renderHook } from "@testing-library/react";
 import { store } from "../../store/store";
 import { User } from "../../types/user/types";
 import { UserCredentials, CustomTokenPayload } from "./types";
@@ -6,6 +6,9 @@ import useUser from "./useUser";
 import Wrapper from "../../mocks/Wrapper";
 import decodeToken from "jwt-decode";
 import { loginUserActionCreator } from "../../store/feature/users/usersSlice/usersSlice";
+import { errorHandlers } from "../../mocks/handlers";
+import { server } from "../../mocks/server";
+import { toast } from "react-toastify";
 
 jest.mock("jwt-decode", () => jest.fn());
 
@@ -26,6 +29,8 @@ const mockTokenPayload: CustomTokenPayload = {
 };
 
 const mockToken = "vik27634fvj";
+
+const mockShowErrorModal = jest.spyOn(toast, "error");
 
 describe("Given a useUser custom hook", () => {
   describe("When the loginUser function is called", () => {
@@ -49,6 +54,21 @@ describe("Given a useUser custom hook", () => {
       await loginUser(userCredentials);
 
       expect(spy).toHaveBeenCalledWith(loginUserActionCreator(mockLoginUser));
+    });
+
+    test("Then it should call the dispatch with the action openModalActionCreator", async () => {
+      server.resetHandlers(...errorHandlers);
+      const {
+        result: {
+          current: { loginUser },
+        },
+      } = renderHook(() => useUser(), {
+        wrapper: Wrapper,
+      });
+
+      await act(async () => loginUser(userCredentials));
+
+      expect(mockShowErrorModal).toHaveBeenCalled();
     });
   });
 });
