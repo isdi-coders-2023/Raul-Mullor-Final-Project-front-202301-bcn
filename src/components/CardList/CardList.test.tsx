@@ -9,7 +9,7 @@ describe("Given a cardList component", () => {
       const nameText = "Victor";
 
       renderWithProviders(<CardList />, {
-        character: { character: [mockCharacter] },
+        character: { characters: [mockCharacter] },
       });
 
       const expectedNameText = screen.getByRole("heading", {

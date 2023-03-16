@@ -5,7 +5,7 @@ import {
 } from "../../../types/characters/types";
 
 const initialState: CharactersData = {
-  character: [],
+  characters: [],
 };
 
 const charactersSlice = createSlice({
