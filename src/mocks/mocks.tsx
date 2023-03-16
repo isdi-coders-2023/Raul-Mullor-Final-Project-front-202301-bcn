@@ -20,5 +20,5 @@ export const mockCharacter: CharacterDataStructure = {
 };
 
 export const mockCharacters: CharactersData = {
-  character: [mockCharacter],
+  characters: [mockCharacter],
 };

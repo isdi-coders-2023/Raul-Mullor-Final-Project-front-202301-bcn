@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const NavbarStyled = styled.nav`
-  .brown {
+  .link {
     display: flex;
     background-color: #590004;
     color: #fff;
@@ -12,7 +12,7 @@ const NavbarStyled = styled.nav`
     font-size: 30px;
   }
 
-  .blue {
+  .active {
     display: flex;
     background-color: #1c2938;
   }

@@ -11,7 +11,7 @@ const CardList = (): JSX.Element => {
     getCharacters();
   }, [getCharacters]);
 
-  const characters = useAppSelector((state) => state.character.character);
+  const characters = useAppSelector((state) => state.character.characters);
 
   return (
     <>

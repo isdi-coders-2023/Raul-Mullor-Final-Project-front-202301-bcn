@@ -4,16 +4,10 @@ import NavbarStyled from "./NavbarStyled";
 const Navbar = (): JSX.Element => {
   return (
     <NavbarStyled>
-      <NavLink
-        className={({ isActive }) => (isActive ? "blue" : "brown")}
-        to={"/Characters"}
-      >
+      <NavLink className={"link"} to={"/Characters"}>
         Characters
       </NavLink>
-      <NavLink
-        className={({ isActive }) => (isActive ? "blue" : "brown")}
-        to={"/Log Out"}
-      >
+      <NavLink className={"link"} to={"/Log Out"}>
         Log Out
       </NavLink>
     </NavbarStyled>

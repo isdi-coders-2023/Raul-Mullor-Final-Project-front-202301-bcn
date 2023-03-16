@@ -1,5 +1,4 @@
 export interface CharacterDataStructure {
-  [x: string]: any;
   name: string;
   age: number;
   gender: "female" | "male";
@@ -13,7 +12,7 @@ export interface CharacterDataStructure {
 }
 
 export interface CharactersData {
-  character: CharactersDataStructure;
+  characters: CharactersDataStructure;
 }
 
 export enum Races {
