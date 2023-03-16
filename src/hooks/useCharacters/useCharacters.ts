@@ -20,13 +20,9 @@ const useCharacters = () => {
           headers: { "Content-Type": "application/json; charset=UTF-8" },
         }
       );
-      const { character } = (await response.json()) as CharactersData;
+      const { characters } = (await response.json()) as CharactersData;
 
-      if (!response.ok) {
-        return;
-      }
-
-      dispatch(loadCharactersActionCreator(character));
+      dispatch(loadCharactersActionCreator(characters));
     } catch (error) {
       return (error as Error).message;
     }
